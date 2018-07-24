@@ -1,0 +1,65 @@
+//custom sass pages
+.dropdown{
+    position: relative;
+
+    
+
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 1000;
+        background-color: white;
+        min-width:200px;
+        text-align: left;
+        box-shadow: 0 0 1px rgba(57, 70, 78, .15), 0 20px 55px -8px rgba(57, 70, 78, .25);
+    
+        li{
+            &>a {
+                margin: 5px 0 5px 10px;
+                &:hover{
+                    background-color: whitesmoke;
+                }
+            }
+        }
+    }
+    
+    &.is-aligned-right .dropdown-menu{
+        right: 0;
+        left: auto;
+    }
+
+    &.is-open .dropdown-menu{
+        display: block;
+    }
+}
+
+.navbar{
+    height: 3.7rem;
+}
+
+.navbar-item img{
+    max-height: 3rem;
+}
+
+/*==============================
+   ===TEXT OVERIDES=============
+   ============================= */
+.is-muted{
+    color: $grey-light !important;
+}
+
+a.is-muted:hover{
+    color: $grey !important;
+}
+
+
+.side-menu {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    overflow-y: scroll;
+    background: white;
+   
+}
